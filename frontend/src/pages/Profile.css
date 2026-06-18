@@ -1,0 +1,151 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+
+  width: min(1100px, 92%);
+  margin: 40px auto;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT PANEL */
+.profile-sidebar {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+
+  text-align: center;
+}
+
+.profile-sidebar .avatar {
+  width: 70px;
+  height: 70px;
+
+  margin: auto;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6366f1,#8b5cf6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.profile-sidebar h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+.profile-sidebar p {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+
+  padding: 5px 10px;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.user {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.badge.admin {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* LINKS */
+.sidebar-links {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links a {
+  padding: 10px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: #0f172a;
+
+  background: #f8fafc;
+
+  font-size: 0.9rem;
+}
+
+.sidebar-links a:hover {
+  background: #e2e8f0;
+}
+
+/* RIGHT PANEL */
+.profile-content {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.profile-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+}
+
+/* INFO */
+.info-box {
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 0;
+  border-bottom: 1px solid #eef2f7;
+
+  font-size: 0.95rem;
+}
+
+/* LOADING */
+.profile-loading {
+  text-align: center;
+  padding: 80px;
+  color: #64748b;
+}

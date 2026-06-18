@@ -1,0 +1,168 @@
+.cart-container {
+  width: min(1200px, 92%);
+  margin: 40px auto;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-card {
+  background: white;
+  border-radius: 24px;
+  padding: 20px;
+
+  display: flex;
+  gap: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.cart-image {
+  width: 140px;
+  height: 140px;
+
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h3 {
+  margin-bottom: 10px;
+}
+
+.cart-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.qty-btn {
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #eef2ff;
+  color: #6366f1;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.remove-btn {
+  border: none;
+
+  background: transparent;
+
+  color: crimson;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.summary-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 25px;
+
+  height: fit-content;
+
+  position: sticky;
+  top: 100px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.summary-card h2 {
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.summary-total {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  margin-top: 15px;
+}
+
+.checkout-btn {
+  width: 100%;
+
+  margin-top: 25px;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card {
+    flex-direction: column;
+  }
+
+  .cart-image {
+    width: 100%;
+    height: 250px;
+  }
+}
