@@ -21,7 +21,8 @@ connectDB();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173"
+      "http://localhost:5173" ,
+      "https://e-commerce-app-nine-henna.vercel.app" , 
     ],
     credentials: true,
   })
